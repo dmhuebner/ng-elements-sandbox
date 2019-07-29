@@ -1,0 +1,7 @@
+<div>
+  <h4>Hello {{name}}!</h4>
+  <ul>
+    <li *ngFor="let item of stuff">{{item.name}} {{item.number}}</li>
+  </ul>
+  <button (click)="onGreet()">Greet</button>
+</div>

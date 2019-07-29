@@ -1,0 +1,20 @@
+<html>
+  <body>
+  <do-greet name="David"></do-greet>
+  <script src="./ng-elements-sandbox.js"></script>
+  <script>
+    const el = document.querySelector('do-greet');
+
+    el.stuff = [
+      {name: 'Frank', number: 1},
+      {name: 'John', number: 2},
+      {name: 'Sally', number: 3},
+      {name: 'Emma', number: 4},
+    ];
+
+    el.addEventListener('greeted', (event) => {
+      alert(event.detail);
+    });
+  </script>
+  </body>
+</html>
