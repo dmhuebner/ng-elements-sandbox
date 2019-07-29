@@ -1,7 +1,8 @@
 <html>
   <body>
   <do-greet name="David"></do-greet>
-  <script src="./ng-elements-sandbox.js"></script>
+  <script src="./polyfills-es2015.js"></script>
+  <script src="./ngelements.js"></script>
   <script>
     const el = document.querySelector('do-greet');
 
@@ -9,7 +10,7 @@
       {name: 'Frank', number: 1},
       {name: 'John', number: 2},
       {name: 'Sally', number: 3},
-      {name: 'Emma', number: 4},
+      {name: 'Emma', number: 4}
     ];
 
     el.addEventListener('greeted', (event) => {
