@@ -25,7 +25,7 @@ npm run serve-demo
 
 **3 - Register the component as an entryComponent in the module**
 
-**4 - Remove the bootstrap property from the module and add an empty ngDoBootstrap() {} function in the Module class which indicates to Angular that this module should be auto-bootstrapped by itself**
+**4 - Remove the bootstrap property from the module and add a ngDoBootstrap() {} function in the Module class which indicates to Angular that this module should be auto-bootstrapped by itself**
 
 **5 - in the Module class where the component is declared add the following:**
 
@@ -43,7 +43,7 @@ npm run serve-demo
   ```
   
   Note: be sure to import createCustomElement from @angular/elements as well as the Injector from @angular/core.
-  To expose a component as an Angular Elements Web Component you call createCustomElement and pass 
+  To expose a component as an Angular Elements Web Component you call createCustomElement() and pass 
   the Component Class and an object with an injector property with a value of the injector you passed into the constructor. 
   The Injector will be used internally to resolve the components dependencies via the dependency injector.
   
