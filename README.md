@@ -33,12 +33,12 @@ npm run serve-demo
   import { createCustomElement } from @angular/elements
   
   export class WebComponentsModule() {
-    constructor(injector: Injector) {
-      const el = createCustomElement(ExampleComponent, {injector});
+    constructor(private injector: Injector) {}
+    
+    ngDoBootstrap() {
+      const el = createCustomElement(ExampleComponent, {injector: this.injector});
       customElements.define('example-component', el);
     }
-    
-    ngDoBootstrap
   }
   ```
   
